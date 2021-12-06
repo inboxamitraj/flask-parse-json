@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>app</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+}
+</style>
+<body>
+page: {{rows.page}}
+<br>
+total: {{rows.total}}
+<br>
+
+<br>
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Avatar</th>
+    </tr>
+    {% for row in rows.data %}
+    <tr>
+        {% if row.first_name == "George" %}
+        <td><p style="background-color:Tomato;">{{row.first_name}}</p></td>
+        <td><p style="background-color:Tomato;">{{row.email}}</p></td>
+        <td><p style="background-color:Tomato;"><a href="{{row.avatar}}">{{row.avatar}}</a></p></td>
+        {% elif row.first_name == "Janet" %}
+        <td><p style="background-color:MediumSeaGreen;">{{row.first_name}}</p></td>
+        <td><p style="background-color:MediumSeaGreen;">{{row.email}}</p></td>
+        <td><p style="background-color:MediumSeaGreen;"><a href="{{row.avatar}}">{{row.avatar}}</a></p></td>
+        {% else %}
+        <td><p style="background-color:DodgerBlue;">{{row.first_name}}</p></td>
+        <td><p style="background-color:DodgerBlue;">{{row.email}}</p></td>
+        <td><p style="background-color:DodgerBlue;"><a href="{{row.avatar}}">{{row.avatar}}</a></p></td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
