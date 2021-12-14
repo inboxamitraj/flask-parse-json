@@ -12,6 +12,13 @@ table, th, td {
 }
 </style>
 <body>
+
+<strong>
+<a href="http://127.0.0.1:5000/">sg_time</a>
+</strong>
+<br>
+<br>
+
 page: {{rows.page}}
 <br>
 total: {{rows.total}}
@@ -24,6 +31,7 @@ total: {{rows.total}}
         <th>Email</th>
         <th>Avatar</th>
     </tr>
+     <!-- if the data is in array format -->
     {% for row in rows.data %}
     <tr>
         {% if row.first_name == "George" %}
@@ -41,6 +49,17 @@ total: {{rows.total}}
         {% endif %}
     </tr>
     {% endfor %}
+    <!-- if the data is in dictionary format -->
+    <!--
+    {% for key, value in rows.items() %}
+    <tr>
+        <td>{{key}}</td>
+        <td>{{value.project_name}}</td>
+        <td>{{value.project_key}}</td>
+    </tr>
+    {% endfor %}
+    -->
+
 </table>
 </body>
 </html>

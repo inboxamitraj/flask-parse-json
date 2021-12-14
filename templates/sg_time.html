@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>app</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+}
+</style>
+<body>
+
+<strong>
+<a href="http://127.0.0.1:5000/users">user_list</a>
+</strong>
+<br>
+<br>
+
+<table style="width:100%">
+    <tr>
+        <th>client_ip</th>
+        <th>datetime</th>
+        <th>timezone</th>
+        <th>unixtime</th>
+        <th>utc_datetime</th>
+    </tr>
+    <tr>
+        <td><p style="background-color:Tomato;">{{rows.client_ip}}</p></td>
+        <td><p style="background-color:Tomato;">{{rows.datetime}}</p></td>
+        <td><p style="background-color:Tomato;">{{rows.timezone}}</p></td>
+        <td><p style="background-color:Tomato;">{{rows.unixtime}}</p></td>
+        <td><p style="background-color:Tomato;">{{rows.utc_datetime}}</p></td>
+    </tr>
+</table>
+</body>
+</html>
