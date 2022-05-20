@@ -1,4 +1,4 @@
-This is a simple Flask webapp to publish Rest APIs response to webUI
+This is a simple Flask webapp to publish Rest API response to a webpage
 
 # How to Run -
 
