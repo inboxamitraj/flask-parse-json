@@ -3,7 +3,7 @@ This is a simple Flask webapp to parse json output to webUI
 # How to Run -
 
 # clone the repo
-$ git clone git@github.com:inboxamitraj/flask-parse-json.git 
+$ git clone git@github.com:inboxamitraj/flask-parse-json.git\
 $ cd flask-parse-json
 
 # create virtual environment
