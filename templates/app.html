@@ -3,14 +3,6 @@
     <meta charset="UTF-8">
     <title>app</title>
 </head>
-<style>
-table, th, td {
-  border:1px solid black;
-  text-align: center;
-  vertical-align: middle;
-}
-}
-</style>
 <body>
 
 <strong>
@@ -18,14 +10,23 @@ table, th, td {
 </strong>
 <br>
 <br>
-
 page: {{rows.page}}
 <br>
 total: {{rows.total}}
 <br>
-
 <br>
-<table style="width:100%">
+
+<style>
+table, th, td {
+  border-collapse: collapse;
+  border:0.5px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+}
+</style>
+
+<table>
     <tr>
         <th>Name</th>
         <th>Email</th>
