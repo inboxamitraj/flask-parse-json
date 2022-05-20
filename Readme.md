@@ -1,4 +1,4 @@
-This is a simple Flask webapp to parse json output to webUI
+This is a simple Flask webapp to publish Rest APIs response to webUI
 
 # How to Run -
 
