@@ -19,7 +19,13 @@ table, th, td {
 <br>
 <br>
 
-<table style="width:100%">
+<style>
+table {
+    border-collapse: collapse;
+}
+</style>
+
+<table>
     <tr>
         <th>client_ip</th>
         <th>datetime</th>
@@ -28,11 +34,11 @@ table, th, td {
         <th>utc_datetime</th>
     </tr>
     <tr>
-        <td><p style="background-color:Tomato;">{{rows.client_ip}}</p></td>
+        <td><p style="background-color:White;">{{rows.client_ip}}</p></td>
         <td><p style="background-color:Tomato;">{{rows.datetime}}</p></td>
-        <td><p style="background-color:Tomato;">{{rows.timezone}}</p></td>
-        <td><p style="background-color:Tomato;">{{rows.unixtime}}</p></td>
-        <td><p style="background-color:Tomato;">{{rows.utc_datetime}}</p></td>
+        <td><p style="background-color:Yellow;">{{rows.timezone}}</p></td>
+        <td><p style="background-color:MediumSeaGreen;">{{rows.unixtime}}</p></td>
+        <td><p style="background-color:DodgerBlue;">{{rows.utc_datetime}}</p></td>
     </tr>
 </table>
 </body>
